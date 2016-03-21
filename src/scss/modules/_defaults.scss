@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  background: radial-gradient(ellipse at center, #141414 0, #141414 60%, #141414 100%);
+}
+body {
+  font-family: $sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  transition: all .4s .3s ease-in;
+}
+body,html{
+	min-height: 100vh;
+}
+.svg-animation {
+  padding: 2px;
+}
+.svg-animation * {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 5px;
+}
