@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Highlabs',
+    siteUrl: 'https://highlabs.github.io',
+    description: 'Developer, freelancer & T.A.R.D.I.S. Mechanical',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
