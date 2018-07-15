@@ -13,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-plugin-typography": "^1.7.19",
+    "gh-pages": "^1.2.0",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
@@ -23,7 +24,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "prettier": "^1.12.0"

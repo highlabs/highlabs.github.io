@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: 'https://highlabs.github.io',
     description: 'Developer, freelancer & T.A.R.D.I.S. Mechanical',
   },
+  pathPrefix: "/highlabs",
   plugins: [
     'gatsby-plugin-react-helmet',
     {
