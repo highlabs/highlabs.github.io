@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  h2 {
+    span {
+      display: none;
+    }
+  }
+  h6 {
+    opacity: 0.1;
+    padding-top: 1em;
+    small {
+      display: block;
+      padding-top: 0.5em;
+    }
+  }
+  .content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+  }
+}

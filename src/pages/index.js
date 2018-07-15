@@ -1,9 +1,18 @@
 import React from 'react'
 
-const IndexPage = () => (
-  <div>
+import Hero from '../components/hero'
+import About from '../components/about'
+import Footer from '../components/footer'
 
-  </div>
+
+const IndexPage = () => (
+  <section>
+
+    <Hero/>
+    <About/>
+    <Footer/>
+
+  </section>
 )
 
 export default IndexPage
