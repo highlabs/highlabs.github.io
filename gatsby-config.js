@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: 'https://highlabs.github.io',
     description: 'Developer, freelancer & T.A.R.D.I.S. Mechanical',
   },
-  pathPrefix: "/highlabs",
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -35,6 +34,24 @@ module.exports = {
       options: {
           include: /images/
       }
-  }
+    },
+    {
+      resolve: 'gatsby-plugin-favicon',
+      options: {
+        logo: './src/images/favicon.png',
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      }
+    }
   ],
 }
