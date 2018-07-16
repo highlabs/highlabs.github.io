@@ -18,6 +18,10 @@ const Layout = ({ children, data }) => (
         { property: 'og:title', content: 'Highlabs'},
         { property: 'og:description', content: 'In 900 years of time and space, I’ve never met anyone who wasn’t important - The Doctor'},
         { property: 'og:image', content: ogimage},
+        // Twitter
+        { name: 'twitter:card', content: 'summary'},
+        { name: 'twitter:site', content: '@dobrado'},
+        { name: 'twitter:creator', content: '@dobrado'}
       ]}
 
 
