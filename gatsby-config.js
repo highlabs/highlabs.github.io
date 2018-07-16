@@ -29,6 +29,12 @@ module.exports = {
           'Open Sans\:400'
         ]
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+          include: /images/
+      }
+  }
   ],
 }

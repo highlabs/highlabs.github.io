@@ -4,8 +4,8 @@ header {
   a {
     text-decoration: none;
   }
-  h1 {
-    color: hsla(0,0%,0%,0.8);
-    text-transform: uppercase;
+  .logo {
+    width: auto;
+    max-height: 80px;
   }
 }

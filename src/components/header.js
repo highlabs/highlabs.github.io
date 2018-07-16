@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import Logo from '../images/logo.svg'
 import './header.scss'
 
 const Header = ({ siteTitle }) => (
   <header>
     <Link to="/">
-      <h1>Highlabs</h1>
+      <Logo className="logo"/>
     </Link>
   </header>
 )
