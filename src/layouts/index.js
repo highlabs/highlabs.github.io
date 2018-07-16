@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.scss'
 
+import ogimage from '../images/og_image.jpeg'
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -12,7 +13,14 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Highlabs' },
         { name: 'keywords', content: 'highlabs, front-end, freelancer, developer' },
+        // Facebook
+        { property: 'og:url', content: 'http://highlabs.github.io'},
+        { property: 'og:title', content: 'Highlabs'},
+        { property: 'og:description', content: 'In 900 years of time and space, I’ve never met anyone who wasn’t important - The Doctor'},
+        { property: 'og:image', content: ogimage},
       ]}
+
+
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <div>
