@@ -1,0 +1,120 @@
+:root {
+    --blue: #29335C;
+    --yellow: #f3a712;
+    --white: #F0CEA0;
+    --black: #534D41;
+    --red: #DB2B39;
+  }
+  
+  html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Fira Code', 'Times New Roman', Times, serif;
+    padding: 1rem;
+    background-color: var(--white);
+    color: var(--blue);
+    height: 100%;
+  }
+  
+  @font-face {
+    font-family: "Fira Code";
+    src: url("/fonts/FiraCode-Medium.woff2") format("woff2"),
+         url("/fonts/FiraCode-Medium.woff") format("woff");
+  }
+  
+  .container {
+    border: 6px solid var(--red);
+    margin: 0 auto;
+    padding: 6px;
+    min-height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--red);
+    position: relative;
+  }
+  
+  a:before {
+    content: '';
+    position: absolute;
+    bottom: -0.7px;
+    width: 0%;
+    background-color: var(--red);
+    height: 1px;
+    transition: width 0.3s ease-in;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  
+  a:hover:before {
+    width: 100%;
+    transition: width 0.3s ease-out;
+    position: absolute;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin: 0.5rem 0 0.5rem 1rem;
+    display: inline;
+  }
+  
+  ul:first-child li {
+    margin-left: 0;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  
+  .cookies {
+    padding: 12px 0 0;
+    text-align: right;
+  }
+  
+  .cookies > span {
+    line-height: 1.5rem;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .container {
+      max-width: 480px;
+      min-height: auto;
+    }
+    .cookies {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+  }
